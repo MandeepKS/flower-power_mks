@@ -1,0 +1,1362 @@
+/* Fonts imported from google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Inria+Sans:wght@300&family=Inria+Serif:wght@400;700&family=Inter:wght@300;500;600;700&family=Istok+Web:wght@400;700&display=swap');
+.fontbasic{
+
+font-family: 'Inder', sans-serif;
+font-family: 'Inria Sans', sans-serif;
+font-family: 'Inria Serif', serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Istok Web', sans-serif;
+}
+
+
+/* Color Variables are registered in root */
+:root{
+    --our-black : #000000;
+    --our-yellow : #FFB31A;
+    --our-grey : #F7F7F7;
+    --font-dark-grey:#BEB9AF;
+    --background-grey: #EEEEEE;
+    --font-about-grey:#9D9B9B;
+}
+
+/* universal selector  */
+*{
+  padding: 0;
+  margin: 0;
+
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+
+}
+
+.main-container{
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+
+
+}
+
+/* Sticky header */
+/* header {
+	position: sticky;
+	max-width: 100%;
+	top: 0;
+	background-color: white;
+    z-index: 200;
+} */
+
+/* ------+++++++---------- */
+
+/* buttons */
+.btn-yellow{
+    color:var(--our-black);
+    text-decoration: none;
+    background-color: var(--our-yellow);
+    border-radius: 50px;
+    transition: ease-in 0.4s;
+
+}
+
+.btn-yellow:hover{
+  background-color: var(--font-dark-grey);
+  
+}
+
+.btn-outeryellow{
+    color: var(--our-black);
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.4s;
+    background-color:var(--font-dark-grey);
+}
+
+.btn-outeryellow:hover{
+   background-color: var(--our-yellow);
+}
+
+.btn-black{
+    color: white;
+    text-decoration:none;
+    background-color: var(--our-black);
+}
+/* ---end of buttons */
+
+
+/* Navbar styling */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 5% 0 1%;
+	
+}
+
+/* ## Mobile navbar menu ## */
+nav .nav-mobile{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 15%;
+    margin-left: -3%;
+    margin-top: 8%;
+    position: absolute;
+    height: 800px;
+    background-color: var(--our-grey);
+    
+}
+
+ .hamburger-open,#menu-checkbox {
+    display: none;
+  }
+
+nav .nav-mobile{
+    display: none;
+}
+
+/* Close mobile nav menu , when it is opened */
+ nav .nav-mobile li{
+     margin-top: 25%;
+   }
+
+/* ### End of mobile navbar### */
+
+
+
+
+/* ### Desktop navbar menu ## */
+
+nav .nav-desktop {
+    display: flex;
+    padding-top: 20px;
+    list-style-type: none;
+
+}
+
+
+nav .nav-desktop li{
+    margin : 0 25px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 15px;
+    color : var(--our-black);
+    transition: all 0.4s;
+}
+
+nav ul li a:hover{
+   color: var(--our-yellow);
+}
+
+/* Footer nav-menu */
+
+nav .footer-nav, nav .social-media{
+    display: flex;
+    flex-direction: column;
+}
+nav .footer-nav li,nav .social-media{
+    padding: 2%;
+}
+
+/* End of footer navmenu */
+
+/* Rainy_home class is for just 'Home' menu only.
+   It changes the home menu color to yellow. */
+
+/* .rainy_home{
+    color: var(--our-yellow);
+}
+
+.rainy_home:hover{
+   color:var(--our-black);
+} */
+/* end of navbar */
+
+
+/* Main body starts with jumbortron */
+
+.jumbotron
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--our-grey);
+
+}
+
+.jumbotron-image{
+    background-image: url("images/home/home.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    max-width: 90%;
+    min-height: 450px;
+    clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
+}
+.jumbotron-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    margin-left:40%;
+    margin-top:5%;
+
+    color:var(--our-black);
+
+
+}
+
+.jumbotron-text h1{
+   font-family:'Istok Web', sans-serif;
+   font-size: 40px;
+   /* text-align: right; */
+   align-items: center;
+}
+.jumbotron-text-yellow{
+    color:var(--our-yellow);
+}
+
+.jumbotron-text h3{
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 15px;
+
+}
+
+
+.btn-yellow.jumbo{
+
+    padding: 7px 40px;
+    margin-right: 10px;
+    font-family: 'Inder', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    
+
+}
+
+
+.btn-outeryellow.jumbo{
+
+    padding: 7px 40px;
+    font-family: 'Inder', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--our-black);
+}
+
+
+/* -----------end of jumbotron */
+
+
+/* ---Container-2 */
+.container-2{
+    display: flex;
+    flex-flow: column;
+    margin-top: 100px;
+}
+
+.container-2 p{
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 54px;
+    text-align: center;
+    color:var(--our-black);
+}
+
+.container-2 p span{
+    font-weight: 500;
+}
+.container-2-images{
+    display: flex;
+    margin: 5% 30% 10%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.container-2-images h5{
+    margin-top: 20px;
+}
+
+/* ---Container -3  */
+.container-3{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1rem;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.container-3 img{
+    max-height: 350px;
+	max-width: 100%;
+    object-fit: fill;
+    padding: 1rem;
+}
+
+.featured-products{
+    /* grid-column :1/-1; means it accquires whole
+      column */
+    grid-column: 1/-1;
+
+}
+.feature-products-card{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    border:2px solid white;
+}
+
+.feature-products-card h4 {
+    font-weight: 600px;
+    font-size:20px;
+    margin-top:20px;
+    line-height: 24px;
+}
+
+.feature-products-card p{
+    font-size: 17px;
+    line-height: 21.78px;
+    margin-top: 10px;
+}
+.feature-products-card:hover{
+    border:2px solid var(--our-yellow);
+}
+
+.btn-yellow.cart{
+    padding: 10px 40px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+/* ---end of container -3  */
+
+/* ----Container-4--- */
+
+.container-4{
+    margin-top:10%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inria Serif',sans-serif;
+    background-image: url("images/home/Container_5_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    padding: 5%;
+}
+
+
+
+.container-4-sub{
+    color: white;
+    text-align: center;
+
+}
+
+.container-4 h4{
+   margin: 5% 0 1% 0;
+   font-weight: 400;
+   font-size: 40px;
+
+}
+
+.container-4 h5{
+    margin:1% 0 1% 0;
+    font-family: 'Istok Web',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+
+
+}
+
+.container-4 p{
+    margin:1% 0 6% 0;
+    font-weight: 400;
+    font-size: 24px;
+
+}
+
+/* --- end of container-4 */
+
+
+/* Container-5 */
+.container-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:5%;
+    max-width:100%;
+    background-color: var(--background-grey);
+    font-family: 'Inria Serif', serif;
+
+}
+
+.container-5 h4{
+    margin: 37px 0 18px 0;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.container-5 p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.container-5 input{
+    width: 35%;
+    height: 50px;
+    border: 1.5px solid var(--our-black);
+    padding-left: 12px;
+    margin: 1.5% 0 1% 0;
+
+
+}
+
+.container-5 input:focus{
+    outline: none;
+    border: 1.5px solid var(--our-yellow);
+}
+
+
+
+.btn-black.cont-5{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 18px 15%;
+    margin-bottom: 5%;
+}
+/* end of container-5 */
+
+
+
+/* Footer section */
+
+footer hr{
+    margin: 1% 0.5% 1% 0.5%;
+}
+
+footer{
+    width:100%;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+
+.social-media{
+    display: flex;
+}
+
+.social-media a{
+    font-size: 20px;
+}
+
+.copyright-container{
+    background-color: var(--our-black);
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+
+
+}
+
+.copyright-container a{
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    margin: 15px;
+}
+/* --end of footer section */
+
+/*
+#
+#
+#
+#¤¤¤¤¤¤¤¤¤¤¤ About-Page ¤¤¤¤¤¤¤¤¤¤¤¤
+#
+#
+#
+#
+*/
+
+
+/* about jumbotron */
+
+.about-jumbotron
+{
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    border: 1px solid var(--our-black);
+}
+
+.about-jumbotron-image{
+    background-image: url("images/about/about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 90%;
+    min-height: 450px;
+    clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
+}
+/* end of about jumbotron */
+
+
+ /* about container-2 */
+
+ .about-our-story, .about-our-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 10% 1% 2% 1%;
+    padding: 2%;
+ }
+
+ .about-story-par, .about-product-par{
+    color: var(--font-about-grey);
+    margin-top: 2%;
+ }
+ /* end about container-2 */
+
+    /* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ End of About-Page ¤¤¤¤¤¤¤¤¤¤¤¤ */
+
+
+
+/* *
+*
+*
+*   ***********Contact Page *********
+*
+*
+*
+ */
+
+ .contact-container-1, .contact-container-2{
+    display: inline-grid;
+    grid-template-columns: 4fr;
+
+}
+
+.contact-container-1{
+    margin: 2% 7% 2% 2%;
+    padding: 2%;
+}
+
+.contact-container-1 p{
+    margin-bottom: 5%;
+    font-size: 15px;
+    font-weight: 300;
+}
+.contact-title{
+    margin-bottom: 5%;
+    font-size: 40px;
+}
+
+.contact-title span{
+    text-decoration: underline;
+}
+.contact-container-2 input,textarea{
+    width: 100%;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    border: none;
+    border-bottom: 1px solid var(--our-yellow);
+    font-size: 18px;
+
+
+}
+
+.contact-container-2{
+    width: 50%;
+}
+
+.contact-container-2 input{
+    height: 30px;
+}
+
+.contact-container-2 input:focus, textarea:focus{
+    outline: none;
+    border-bottom: 2px solid var(--our-yellow);
+}
+
+
+
+/* button in contact form, align */
+.contact-submit{
+
+     margin-top: 8%;
+     padding: 3% 10%;
+     font-weight: 700;
+}
+
+
+/* ###### END OF CONTACT PAGE ####### */
+
+
+
+
+
+
+
+
+/*
+*
+*
+* ######## PRODUCT DETAIL PAGE ######
+*
+*
+ */
+
+ .productdetail-container-1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: auto;
+    gap: 3%;
+
+
+
+}
+
+ .prodt-price{
+    font-size: 15px;
+    margin-bottom: 1%;
+ }
+
+ .prodt-tax-detail{
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 2%;
+ }
+
+ .prodt-desc{
+    font-size: 15px;
+    font-weight: 300;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    padding-right: 5%;
+ }
+ .prodt-detail img{
+   
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    
+ }
+
+
+ .prodt-size{
+    display: flex;
+}
+
+.prodt-size a{
+    text-decoration: none;
+    margin: 2% 2% 3% 0;
+    padding: 1%;
+    color: var(--our-black);
+    border: 1px solid var(--our-black);
+ }
+
+ .prodt-size a:hover ,li:hover{
+
+    color: var(--our-yellow);
+ }
+
+ /* Product Add to cart button */
+
+ .product-btn{
+    padding: 1% 11%;
+ }
+
+ /* ### End of Product Detail Page ##### */
+
+
+
+
+
+/*
+#
+#
+#
+########## CHECKOUT PAGE ##############
+#
+#
+#
+# */
+
+.checkout-title-container-1{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.checkout-container-2{
+    display: flex;
+    gap:3%;
+}
+
+.section-1{
+    width:40%;
+}
+.section-1 p{
+    margin-bottom: 2%;
+}
+.section-1 input{
+    width: 100%;
+    margin-bottom: 3%;
+    padding: 1%;
+}
+/* ## Image order preview title ## */
+.order-preview img{
+    /* height: auto;
+    width: auto; */
+    max-width: 90%;
+    max-height: 200px;
+
+    margin-left: 3%;
+}
+.section-3{
+    width:50%;
+}
+.section-3,.section-2{
+    margin-top: 5%;
+}
+
+.checkout-prodt-price{
+    margin-top: 5%;
+}
+
+.checkout-prodt-shipping,.checkout-prodt-total-price,.checkout-button{
+    margin-left: 50%;
+}
+
+.checkout-prodt-total-price{
+    margin-bottom: 3%;
+}
+.checkout-button{
+    padding: 1%;
+}
+
+.shipping-free,.price-in-krone{
+   margin-left: 15%;
+}
+
+.credit-debit-card{
+    margin: 2% 0 3% 10%;
+
+}
+.credit-card-pay{
+    padding: 2% 10%;
+    font-size: 18px;
+    font-weight: 700;
+    border-width: 0;
+
+}
+
+
+.checkout-prodt-size,.checkout-prodt-color,.checkout-prodt-quantity,.checkout-section1-subtitle{
+    font-weight: 300;
+    font-size: 15px;
+}
+ /* ### End of CHECK-OUT Page ##### */
+
+
+
+
+/* 
+#######################################
+#                                     #
+#                                     #
+#   #### PAYMENT SUCESSFULL #######   #
+#  #                               #  #
+# #                                 # #
+#######################################
+ */
+
+ .paymentsucessfull{
+    display: grid;
+    grid-template-columns: 2fr;
+    margin-top: 15%;
+    background-color: var(--our-grey);
+    
+}
+
+
+/* Responsiveness Table and desktop */
+
+
+
+@media only screen and (max-width:900px){
+
+     /* Jumbotron section */
+
+
+
+     .jumbotron-text h1{
+         font-size: 35px;
+      }
+
+      .jumbotron-text h3{
+
+         font-size: 20px;
+         margin-bottom: 18px;
+
+     }
+
+      .btn-yellow.jumbo{
+
+         padding: 7px 30px;
+         margin-right: 10px;
+         font-weight: 400;
+         font-size: 15px;
+
+     }
+
+     .btn-outeryellow.jumbo{
+
+         padding: 7px 30px;
+         font-weight: 400;
+         font-size: 15px;
+     }
+
+     /* End of jumbotron section */
+
+    /* Container-2 */
+     .container-2-images{
+        flex-direction: column;
+
+     }
+
+     .container-2-images h5{
+         margin: 10px 0 30px 0;
+     }
+    /* end of container -2  */
+
+    /* ############///////////
+    #
+    #
+    #
+    #%%%%%% Contact page %%%%%%%%%
+    #
+    #
+    ################# */
+    
+    .contact-container-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact-container-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* ####End of contact page */
+
+
+
+
+    /*######
+    ###
+    ###
+    ### Check-Out.html page 
+    ##
+    #
+    # */
+
+    .checkout-prodt-shipping,.checkout-prodt-total-price,.checkout-button{
+        margin-left: 0;
+    }
+   
+    /* ##### END OF CHECKOUT PAGE ##### */
+
+
+
+}
+
+/*
+*
+************ 760px media query *********
+*
+*
+ */
+@media only screen and (max-width: 760px){
+
+    .main-container{
+        width:100%;
+
+
+     }
+      /* nav logo */
+
+    .logo img{
+        
+         height: 58px;
+        width:95px;
+    }
+
+    /* Desktop navbar- menu disabled */
+    nav .nav-desktop{
+       display: none;
+     }
+
+     /* Mobile navbar enabled */
+     
+    .hamburger-open{
+        display: inline;
+        cursor: pointer;
+        z-index: 20;
+     }
+     
+    #menu-checkbox:checked ~ #mobile-nav{
+       display: flex;
+       z-index: 10;
+       
+    }
+
+     /* end of mobile navbar */
+
+
+
+       /* Jumbotron section */
+
+       .jumbotron
+       {
+           display: flex;
+           flex-direction: column;
+
+       }
+
+       /* Tablet size image for home page jumbotron */
+       .jumbotron-image{
+          background-image: url("tablet-images/home/home.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          max-width: 100%;
+          clip-path: none;
+
+       }
+
+       .jumbotron-text{
+        margin-top: 20%;
+        color: white;
+       }
+
+       .btn-outeryellow.jumbo{
+        color: white;
+       }
+    /* ----Container-2-----  */
+
+     .container-2 p{
+        font-size: 35px;
+        line-height: 44px;
+     }
+
+    /* --end of container-2 --- */
+
+    /* -----Container-4--  */
+    .container-4{
+        background-image: url("tablet-images/home/Container_5_background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .container-4 h4{
+        font-size: 30px;
+    }
+
+    .container-4 h5{
+        font-size: 13px;
+    }
+    .container-4 p{
+       font-size: 20px;
+    }
+    /* ---end of container-4-- */
+
+    /* ---Container-5 ----- */
+
+    .container-5 h4{
+     font-size: 25px;
+     line-height: 30px;
+    }
+
+    .container-5 p{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .container-5 input{
+        width: 50%;
+    }
+
+    .btn-black.cont-5{
+        padding: 18px 20%;
+    }
+    /* ---End of container-5 ---- */
+
+    /* ----footer--- */
+    .footer-logo{
+        display: none;
+    }
+    
+
+     nav .footer-nav{
+        display: none;
+      }
+
+      nav .social-media{
+        display: grid;
+        grid-template-columns: 3fr 3fr 2fr;
+        justify-items: center;
+        width: 100%;
+      }
+     /* end of footer navbar */
+
+
+    /* ¤
+    ¤
+    ¤
+    ¤¤
+    ¤¤
+    ¤¤¤¤¤¤¤¤
+    ¤¤¤¤¤¤¤¤¤¤¤¤¤ About-Page ¤¤¤¤¤¤
+    ¤
+    ¤¤
+    ¤¤¤¤ */
+
+    .about-jumbotron{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+    }
+    .about-jumbotron-image{
+        background-image: url("tablet-images/about/about.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: none;
+        max-width: 100%;
+   }
+
+   /* ############## end of about page ############ */
+
+
+
+  /*######
+    ###
+    ###
+    ### Check-Out.html page 
+    ##
+    #
+    # */
+
+    .checkout-produt-title{
+        font-size: 18px;
+    }
+    
+    .checkout-prodt-price{
+        font-size: 16px;
+    }
+   /* ### end of checkout page #### */
+
+
+   /* ### PAYMENT SUCESSFULL PAGE */
+ 
+   .paymentsucessfull-txt{
+    color: var(--our-black);
+}
+   /* ### END OF PAYMENT SUCESSFULL PAGE */
+
+
+}
+
+
+/*
+¤
+¤ *********** 550px media query **********
+¤
+¤ */
+
+@media only screen and (max-width: 550px){
+
+
+    /* desktop navbar should be disable  */
+
+     .main-container{
+        width:100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: auto;
+        margin-left: auto;
+     }
+
+   nav .nav-mobile{
+    margin-top: 13%;
+   }
+   
+   nav .social-media li a{
+    font-size: 15px;
+   }
+   
+  /* Jumbotron section */
+
+  .jumbotron{
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      justify-content: center;
+      background-color: transparent;
+
+   }
+
+
+.jumbotron-image{
+    object-fit: cover;
+    background-image: linear-gradient(
+      to right,
+      hsl(0deg 0% 0% / 70%),
+      transparent 50%
+  ),url("mobile-images/home/home.jpg");
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+  .jumbotron-text h1{
+      font-size: 25px;
+     }
+
+   .jumbotron-text h3{
+
+    font-size: 16px;
+    margin-bottom: 18px;
+
+  }
+
+  .jumbo-buttons{
+    display: none;
+  }
+
+   .btn-yellow.jumbo{
+
+      padding: 7px 25px;
+      margin-right: 10px;
+      margin-bottom: 40px;
+      font-weight: 400;
+      font-size: 12px;
+
+  }
+
+  .btn-outeryellow.jumbo{
+
+      padding: 7px 25px;
+      font-weight: 400;
+      font-size: 12px;
+
+  }
+
+  /* End of jumbotron section */
+
+
+  /* ---container-2 --- */
+   .container-2{
+    margin-top: 50px;
+   }
+  .container-2 p{
+    font-size: 25px;
+    line-height: 30px;
+ }
+  /* ----end of container-2 */
+
+   /* .....container3---- */
+    .container-3{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+    }
+   /* ---end of container-3 */
+
+
+   /* -----Container-4--  */
+   .container-4{
+    background-image: url("mobile-images/home/Container_5_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+    .container-4 h4{
+     font-size: 25px;
+}
+
+    .container-4 h5{
+     font-size: 10px;
+}
+    .container-4 p{
+      margin:1% 0 6% 0;
+     font-size: 17px;
+}
+/* ---end of container-4-- */
+
+ /* ---Container-5 ----- */
+
+ .container-5 h4{
+    font-size: 25px;
+    line-height: 30px;
+   }
+
+   .container-5 p{
+       padding-left: 3%;
+       padding-right: 3%;
+       font-size: 17px;
+       line-height: 20px;
+   }
+
+   .container-5 input{
+
+       width: 65%;
+   }
+
+   .btn-black.cont-5{
+       padding: 18px 25%;
+   }
+
+
+
+   /* ---End of container-5 ---- */
+
+   /* ########## About-page ####### */
+
+    .about-jumbotron-image{
+        background-image: linear-gradient(
+            to right,
+            hsl(0deg 0% 0% / 70%),
+            transparent 50%
+        ),url("mobile-images/about/about.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+
+   }
+
+   .about-txt{
+     margin-top: 40%;
+   }
+
+   .about-txt h1{
+    font-size: 30px;
+   }
+   /* ¤¤¤¤¤¤¤¤ end of about-page */
+
+    /*######
+    ###
+    ###
+    ### Check-Out.html page 
+    ##
+    #
+    # */
+
+    .checkout-title-container-1 h1{
+        font-size: 25px;
+    }   
+    
+    .section-1 h2{
+        font-size:18px;
+    }
+
+    .section-1{
+        width: 80%;
+        margin-top: 20%;
+    }
+
+    .section-1 input{
+        width: 100%;
+        margin: 0%;
+        padding: 1%;
+    }
+   
+    .section-2 {
+        position:absolute;
+        margin-top: -83%;
+        margin-left: -50% ;
+    }
+
+    .section-3{
+        margin-left: 50%;
+    }
+    .checkout-container-2{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .payment-method-title{
+        text-align: center;
+        margin-top: 7%;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .credit-debit-card,.credit-card-pay{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: -3%;
+    }
+
+    .credit-card-pay{
+        margin-left: 30%;
+       
+    }
+   
+    /* End of Checkout page  */
+
+
+    /* #### Product detail page ### */
+
+    .productdetail-container-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 2%;
+        padding: 3%;
+    }
+  
+     /* #### END Product detail page ### */
+
+    /* ### PAYMENT SUCESSFULL PAGE */
+ 
+   .paymentsucessfull{
+    margin-top: 30%;
+    margin-right: 5%;
+    margin-bottom: 50%;
+}
+   /* ### END OF PAYMENT SUCESSFULL PAGE */
+}
