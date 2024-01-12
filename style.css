@@ -956,7 +956,7 @@ footer{
 
        /* Tablet size image for home page jumbotron */
        .jumbotron-image{
-          background-image: url("tablet-images/home/home.jpg");
+          background-image: url("images/home/home.jpg");
           background-repeat: no-repeat;
           background-size: cover;
           max-width: 100%;
@@ -966,7 +966,7 @@ footer{
 
        .jumbotron-text{
         margin-top: 20%;
-        color: white;
+        color: var(--our-black);
        }
 
        .btn-outeryellow.jumbo{
