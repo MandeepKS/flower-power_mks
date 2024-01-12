@@ -11,10 +11,10 @@
     -------------------------------*/
     export async function getRaincoat(id) {
       
-    
-        const response = await fetch(apiUrl + id);
-        const rainyjacket = await response.json();
         
+        const response = await fetch(apiUrl +'/'+ id);
+        const rainyjacket = await response.json();
+       
         if(!response.ok){
           alert("Error: Bad connection, Jacket id is not fetching the data.");  
         }
@@ -32,26 +32,19 @@
 
   function renderRaincoat(jacketData) {
     
+    const image_alt = jacketData.images[0].alt;
+    const flower_img = jacketData.images[0].src;
+    const flower_price = jacketData.prices.price/100;
+
     const jacketElements = document.querySelector(".productdetail-container-1");
      jacketElements.innerHTML += `<div class="prodt-detail">
-     <img src="${jacketData.image}" alt="Raincho_Unisex_Raincoat"></div>
+     <img src="${flower_img}" alt="${image_alt}"></div>
      <div class="prodt-description">
-     <h1 class="prodt-title">${jacketData.title}</h1>
-     <h3 class="prodt-price">NOK ${jacketData.price}</h3>
+     <h1 class="prodt-title">${jacketData.name}</h1>
+     <h3 class="prodt-price">NOK ${flower_price}</h3>
      <h5 class="prodt-tax-detail">inc. all taxes and duties</h5>
      <p class="prodt-desc">${jacketData.description}</p>
-     <label for="color-option">COLOR:</label><br>
-     <select name="color-option" id="color-option">
-             <option value="${jacketData.baseColor}">${jacketData.baseColor}</option>
-     </select>
-     <span class="prodt-size">
-                            <a href="#">${jacketData.sizes[0]}</a>
-                            <a href="#">${jacketData.sizes[1]}</a>
-                            <a href="#">${jacketData.sizes[2]}</a>
-                            <a href="#">${jacketData.sizes[3]}</a>
-                            <a href="#">${jacketData.sizes[4]}</a>
-                            <a href="#">${jacketData.sizes[5]}</a>
-                        </span>
+     <br><br>
      <a href="checkout.html?id=${jacketData.id}" class="btn-yellow product-btn">ADD TO CART</a>
     </div>`
    }

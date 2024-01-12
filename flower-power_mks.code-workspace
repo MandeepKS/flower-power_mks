@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "flower-power_mks",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "flower-power_mks"
+	}
+}

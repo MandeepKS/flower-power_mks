@@ -13,7 +13,6 @@
  
      const response = await fetch(apiUrl);
      const rainyjackets = await response.json();
-     
      if(!response.ok){
      alert("Error: Bad connection,Jackets data are not fetching.");   
     }

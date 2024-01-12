@@ -13,7 +13,7 @@ import {apiUrl} from "./apiconnection.js";
      
     const response = await fetch(apiUrl);
     const rainyjackets = await response.json();
-
+   
     
     if (!response.ok) 
     {
@@ -33,7 +33,7 @@ import {apiUrl} from "./apiconnection.js";
   ---------------------------------------- */
 
 function renderRaincoat(jacketData) {
- 
+   
 const image_alt = jacketData.images[0].alt;
 const flower_img = jacketData.images[0].src;
 const flower_price = jacketData.prices.price/100;

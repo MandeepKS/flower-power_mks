@@ -12,7 +12,7 @@
     export async function getRaincoat(id) {
       
         
-        const response = await fetch(apiUrl + id);
+        const response = await fetch(apiUrl +'/'+ id);
         const rainyjacket = await response.json();
         if(!response.ok){
           alert("Error: Bad connection, Jacket id is not fetching the data.");  
@@ -32,23 +32,25 @@
   function renderRaincoat(jacketData) {
     
     /* Order preview Image section */
+
+    const flower_img = jacketData.images[0].src;
+    const flower_price = jacketData.prices.price/100;
+
     const jacketImage = document.querySelector(".order-preview");
-    jacketImage.innerHTML += `<img src="${jacketData.image}" alt="Noir_Femme_Raincoat">`;
+    jacketImage.innerHTML += `<img src="${flower_img}" alt="Noir_Femme_Raincoat">`;
     
 
     /* Order preview detail */
     const jacketElements = document.querySelector(".order-preview-product-detail");
      jacketElements.innerHTML += 
      
-     `<h2 class="checkout-produt-title">${jacketData.title}</h2>
-     <p class="checkout-prodt-size">Size: S</p>
-     <p class="checkout-prodt-color">Color: ${jacketData.baseColor} Blue</p>
+     `<h2 class="checkout-produt-title">${jacketData.name}</h2>
      <p class="checkout-prodt-quantity">Quantity: 1</p>
-     <h3 class="checkout-prodt-price">NOK ${jacketData.price}</h3>
+     <h3 class="checkout-prodt-price">NOK ${flower_price}</h3>
     <hr>
     <p class="checkout-prodt-shipping">Shipping : <span class="shipping-free">Free</span></p>
-    <h4 class="checkout-prodt-total-price">Total <span class="price-in-krone">NOK ${jacketData.price}</span></h4>
-    <a href="collection" class="btn-outeryellow checkout-button">CONTINUE SHOPPING</a>`;
+    <h4 class="checkout-prodt-total-price">Total <span class="price-in-krone">NOK ${flower_price}</span></h4>
+    <a href="collection" class="btn-outeryellow checkout-button">CONTINUE SHOPPING</a> <br>`;
    }
 
 

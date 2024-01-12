@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout | Flower power</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="rain jackets, jackets, rain wear, clothing">
+    <meta name="description" content="Rainy Day's checkout page." />
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/076a43e25b.js" crossorigin="anonymous"></script>
+
+    <!--Stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Javascript -->
+    <script  type = "module" src="js/index.js" defer></script>
+    
+
+</head>
+
+
+<!--body part-->
+<body>
+    <!-- main container-->
+    <div class="main-container">
+
+            <header>
+            <!--navbar -->
+        <nav class="navbar"> 
+            
+            <input type="checkbox" id="menu-checkbox">
+            <label class="hamburger-open" for="menu-checkbox"><i class="fa fa-bars fa-2x"></i></label>
+            <!--Logo-->
+            <div class="logo">
+             <a href="index.html"><img src="/images/header/flower-logo.jpg" alt="flower-logo"></a>
+            </div>
+            
+            <!-- Mobile version navbar -->
+            <ul id="mobile-nav" class="nav-mobile">
+                <li><a href="index.html" class="rainy_home"><i class="fa-solid fa-house"></i> HOME</a></li>
+                <li><a href="collection.html"><i class="fa-solid fa-shirt"></i> COLLECTION</a></li>
+                <li><a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> CART</a></li>
+            </ul>
+                
+
+            <!-- Desktop version navbar -->
+            <ul class="nav-desktop">
+                <li><a href="index.html" class="rainy_home">HOME</a></li>
+                <li><a href="collection.html">COLLECTION</a></li>
+                <li><a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> CART</a></li>
+          
+            </ul>
+             
+        </nav>
+         <!--end navbar-->
+            </header> 
+            <!-- Checkout title container 1 -->
+            <div class="checkout-title-container-1">
+                <h1>Secure Checkout</h1>
+            </div>
+            <!-- End of title container-1 -->
+
+            <!-- Checkout container-2 -->
+            <div class="checkout-container-2">
+                <section class="section-1 checkout-container-2-title">
+                    <h2>Your information</h2>
+                    <p class="checkout-section1-subtitle">We deliver products only in Norway.</p>
+                    
+                    <!-- input form -->
+                    <form action="paymentsucessfull.html">
+                    <!-- email -->
+                    <div>
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email" placeholder="NAME@RAINYDAYS.NO" required>
+                    </div>
+
+                    <!-- input full-name -->
+                    <div>
+                        <label for="full-name">full-name</label>
+                        <input type="text" id="full-name" name="fullname" placeholder="FULL NAME" required>
+                    </div>
+
+                    <!-- phone  -->
+                    <div>
+                        <label for="tel">tel</label>
+                        <input type="tel" id="tel" name="phone" placeholder="+47 4111112" required>
+                    </div>
+
+                    
+                    <!-- Adress -->
+                    <div>       
+                        <label for="address">address</label>
+                        <input type="text" name="address" id="address" placeholder="ADDRESS" required>
+                    </div>
+
+                    <!-- Town -->
+                    <div>
+                        <label for="town">town</label>
+                        <input type="text" name="town" id="town" placeholder="TOWN" required>
+                    </div>
+                </section>
+                    <!-- end of input form -->
+
+            
+                <!-- Section-2 Order preview -->
+                <section class="section-2">
+                   <h6 class="order-preview-title">Your Order</h6>
+                   
+                   <h1 id="loading">Loading...</h1>
+                   <!-- preview-img-->
+                   <div class="order-preview">
+                   <!--  <img src="images/home/Noir_Femme_Raincoat.jpg" alt="Noir_Femme_Raincoat"> -->
+                    </div>
+                    
+                </section>  
+                  <!--end of section-2  -->
+
+                    <!-- section-3 order preview detail -->
+                    <section class="section-3">
+                        <div class="order-preview-product-detail">
+                           <!--  <h2 class="checkout-produt-title">NOIR FEMME</h2>
+                            <p class="checkout-prodt-size">Size: S</p>
+                            <p class="checkout-prodt-color">Color: Mixed Dark Blue</p>
+                            <p class="checkout-prodt-quantity">Quantity: 1</p>
+                            <h3 class="checkout-prodt-price">NOK 2 950</h3>
+                            <hr>
+                            <p class="checkout-prodt-shipping">Shipping : <span class="shipping-free">Free</span></p>
+                            <h4 class="checkout-prodt-total-price">Total <span class="price-in-krone">NOK 2 950</span></h4>
+                            <a href="collection.html" class="btn-outeryellow checkout-button">CONTINUE SHOPPING</a> -->
+                        </div>
+                    </section>
+                    <!--end of section-3 -->
+                  
+            </div>
+            <!-- End of Checkout container-2 -->
+             
+            <!-- Container -3 -->
+            
+                <!-- Payment method -->
+                
+                <p class="payment-method-title">Payment method</p>
+                <hr>
+                <!-- visa Card -->
+                <div class="credit-debit-card">
+                
+                <!-- vipps -->
+                <input type="radio" name="card_payment" id="vipps" value="Vipps" required>
+                <img src="images/checkout/vipps-logo.png" alt="vipps">
+                </div>
+                <!-- end of payment method -->
+                
+                <!-- payment button -->
+               <input type="submit" class="btn-yellow credit-card-pay" value="Pay Order"></input>
+            </form>
+            <!-- end of checkout form -->
+                
+            <br><br><hr>
+        </div>
+        <!--end of main container-->    
+            
+             
+        <!-- footer navbar -->
+        <footer>
+            <nav>
+                 <div class="footer-logo">
+                    <a href="index.html"><img src="/images/footer/footer-logo.jpg" alt="Footer-Flower-power"></a>
+                 </div>
+               
+                    
+                    <ul class="footer-nav">
+                        <li><a href="collection.html">COLLECTION</a></li>
+                        <li><a href="collection.html">PRODUCT GUIDE</a></li>
+                    </ul>
+                    <ul class="social-media">
+                        <li class="footer-facebook"><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> facebook</a></li>
+                        <li class="footer-instagram"><a href="https://instagram.com" target="_blank" ><i class="fa-brands fa-instagram"></i> instagram</a></li>
+                        <li class="footer-twitter"><a href="https://twitter.com" target="_blank" ><i class="fa-brands fa-twitter"></i> twitter</a></li>
+                    </ul>
+                
+            </nav>
+             <!-- end of footer navbar -->
+          
+             <div class="copyright-container">
+                 <a href="index.html">&copy; 2024 Flower Power</a>
+            </div>
+        </footer> 
+    </body>
+</html>
+   
