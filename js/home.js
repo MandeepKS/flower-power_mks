@@ -1,6 +1,11 @@
 /* --------------------------------------------
  import apiconnection is for accessing the api
- --------------------------------------------- */
+ --------------------------------------------- 
+ THis home.js not using in this project
+ because we are rendering all the products to 
+ index.html instead of just 3 products
+ 
+ */
  import {apiUrl} from "./apiconnection.js";
 
 

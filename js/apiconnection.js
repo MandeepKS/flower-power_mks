@@ -4,7 +4,7 @@
 
  export {url, endpoint, apiUrl} */
 
- const url = "http://shopnorwaymks.local";
+ const url = "https://shopnorwaymks.no";
  const endpoint = "/wp-json/wc/store/products";
  const apiUrl = url + endpoint;
 
